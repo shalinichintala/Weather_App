@@ -1,13 +1,14 @@
 .weather {
     place-self: center;
     padding: 40px;
-    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
+    /* border-radius: 60px; */
     background-image: linear-gradient(45deg, rgb(44, 44, 176), blue);
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    width: 350px; /* Added a fixed width for better centering */
     color: #ebfffc; /* Moved here to ensure consistent text color */
 }
 
@@ -15,7 +16,7 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    width: 100%; /* Makes search-bar full-width */
+    width: 70%; /* Makes search-bar full-width */
     margin-bottom: 20px; /* Added spacing */
 }
 
@@ -62,20 +63,21 @@
 }
 
 .weather-data {
-    width: 100%; /* Allows the data to use full width */
+    width: 80%; /* Allows the data to use full width */
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Added spacing between columns */
+    gap: 30px; /* Added spacing between columns */
 }
 
 .weather-data .col {
     display: flex;
     align-items: center; /* Align items properly */
+    justify-content: space-evenly;
     gap: 12px;
     flex: 1; /* Makes columns evenly spaced */
     background: rgba(255, 255, 255, 0.2); /* Added subtle background for columns */
-    padding: 10px;
+    padding: 15px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -86,7 +88,7 @@
 
 .weather-data .col div {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
 }
 
@@ -97,7 +99,12 @@
 }
 
 .weather-data .col span {
-    font-size: 16px;
-    margin-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin-top: 5px; */
     color: #d1faff;
+}
+
+.elements{
+    display: flex;
 }
